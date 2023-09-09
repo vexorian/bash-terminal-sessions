@@ -1,6 +1,10 @@
 # bash-terminal-sessions
 Who needs tmux when you have bash?
 
+
+https://github.com/vexorian/bash-terminal-sessions/assets/5443609/a6760ac0-7938-4b1a-b44f-765b3588d89f
+
+
 ## Features
 
 Create bash "sessions" within your user. Each session has its own command history and if you close the session and open it again, it will remember the last work directory you used.
