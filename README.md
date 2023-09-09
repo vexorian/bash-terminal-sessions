@@ -1,5 +1,17 @@
 # bash-terminal-sessions
-Who needs tmux when you have bash?
+
+*Who needs tmux when you have bash?*
+
+I pretty much use terminals in all of my workflows. But I like having multiple windows and tabs. The constant issue is that the command line history gets messed up or missing when terminals are closed. And terminals will get closed for various reasons.
+
+For a while I thought this was going to be a constant issue, until I saw buzz online about a program called [tmux](https://github.com/tmux/tmux/wiki). It was very exciting cause it sounded like something that could solve this problem. Though I quickly found it to have way more features. For better or worse. I believe there's a place for tmux in my workflow and I certainly need to keep learning it. But for this use case, all I wanted was two simple things:
+
+- Remembering the work folder a tab is in.
+- Keeping a separate command line history for each tab.
+
+tmux could do that in some way, although not exactly, but it also came with other compromises related to its design, which is more focused on sharing the terminal altogether with everything and any running commands and TUI in it. This also meant that things like mouse selection and text scrolling would have to be in charge of tmux from now on. 
+
+So instead I ended up opting for a quick tweak to my .bashrc file that allow those things by just adding an environment variable before running bash to start a named session:
 
 
 https://github.com/vexorian/bash-terminal-sessions/assets/5443609/a6760ac0-7938-4b1a-b44f-765b3588d89f
